@@ -15,4 +15,8 @@ use App\Http\Controllers\ExercisesController;
 |
 */
 
-Route::get('exercises', [ExercisesController::class, 'index']);
+Route::get('exercises', [ExercisesController::class, 'exercises']);
+Route::get('selected', [ExercisesController::class, 'selected']);
+
+Route::post('deselect', [ExercisesController::class, 'deselect']);
+Route::post('select', [ExercisesController::class, 'select']);
