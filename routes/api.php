@@ -20,3 +20,5 @@ Route::get('selected', [ExercisesController::class, 'selected']);
 
 Route::post('deselect', [ExercisesController::class, 'deselect']);
 Route::post('select', [ExercisesController::class, 'select']);
+
+Route::get('search', [ExercisesController::class, 'search']);
